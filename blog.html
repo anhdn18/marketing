@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Blog</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="assets/images/favicon-1.png"/>
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/css/libs/bootstrap/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/fonts/ionicons/css/ionicons.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/css/libs/slick/slick.css">
+	<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/css/libs/magnific-popup/magnific-popup.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="rtl.css">
+	<!--===============================================================================================-->
+
+</head>
+<body class="responsive home-3">
+
+<div id="wrapper-container">
+
+	<!-- Header -->
+	<div id="toolbar" class="thim-toolbar style-overlay size-large">
+		<div class="container">
+			<div class="toolbar-inner">
+				<div class="toolbar-left">
+					<aside class="widget widget_text">
+						<div class="textwidget">
+							<ul class="thim-block-toolbar-help-info">
+								<li class="phone-info">
+									<i class="ion ion-ios-telephone"></i>
+									Need help? Call us now: <a href="#">(+88) 12 345 6789</a>
+								</li>
+
+								<li>
+									<i class="ion ion-android-mail"></i>
+									<a href="#">global@mail.com</a>
+								</li>
+							</ul>
+						</div>
+					</aside>
+				</div>
+
+				<div class="toolbar-right">
+					<aside class="widget widget_thim_layout_builder">
+						<div class="wpb_wrapper">
+							<!-- shortcode social -->
+							<div class="bp-element bp-element-social-links default">
+								<ul class="socials">
+									<li class="facebook">
+										<a href="#">
+											<i class="social-icon fa fa-facebook"></i>
+										</a>
+									</li>
+
+									<li class="twitter">
+										<a href="#">
+											<i class="social-icon fa fa-twitter"></i>
+										</a>
+									</li>
+
+									<li class="pinterest-p">
+										<a href="#">
+											<i class="social-icon fa fa-pinterest-p"></i>
+										</a>
+									</li>
+
+									<li class="linkedin">
+										<a href="#">
+											<i class="social-icon fa fa-linkedin"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- end shortcode social -->
+
+							<!-- shortcode login popup -->
+							<div class="bp-element bp-element-login-popup layout-1">
+								<div class="login-links show-icon">
+									<a class="login" data-active=".box-login" data-effect="mfp-zoom-in" href="#bp-popup-login">
+										Login
+									</a>
+								</div>
+
+								<div id="bp-popup-login" class="white-popup mfp-with-anim mfp-hide">
+									<div class="loginwrapper">
+										<!-- form register -->
+										<div class="login-popup box-register">
+											<div class="media-content" style="background-image: url(assets/images/case-studies-01.jpg);"></div>
+
+											<div class="inner-login">
+												<h3 class="title">
+													<span class="current-title">Register</span>
+													<span>
+														<a href="#login" class="display-box" data-display=".box-login">Login</a>
+													</span>
+												</h3>
+
+												<div class="form-row">
+													<div class="wrap-form">
+														<div class="form-desc">
+															We will need...
+														</div>
+
+														<form id="registerform">
+															<p class="login-username">
+																<input type="text" placeholder="Username"   class="input">
+															</p>
+
+															<p class="login-email">
+																<input type="email" name="user_email" placeholder="Email"   class="input">
+															</p>
+
+															<p class="text-mail">
+																We send your registration email to this address.
+															</p>
+
+															<p class="button-submit">
+																<input type="submit" name="wp-submit" class="button button-primary button-large" value="Register"/>
+																<input type="hidden" name="redirect_to" value=""/>
+															</p>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--end form register -->
+
+										<!-- form login -->
+										<div class="login-popup box-login">
+											<div class="media-content" style="background-image: url(assets/images/case-studies-01.jpg);"></div>
+
+											<div class="inner-login">
+												<h3 class="title">
+													<span>
+														<a href="#register" class="display-box" data-display=".box-register">Registration</a>
+													</span>
+
+													<span class="current-title">Login</span>
+												</h3>
+
+												<div class="form-row">
+													<div class="wrap-form">
+														<div class="form-desc"> We will need... </div>
+
+														<form id="loginform">
+															<p class="login-username">
+																<input type="text" placeholder="Username"   class="input">
+															</p>
+
+															<p class="login-email">
+																<input type="email" name="user_email" placeholder="Email"   class="input">
+															</p>
+
+															<p class="login-remember">
+																<input type="checkbox" name="rememberme" id="rememberme" value="forever">  Remember Me
+															</p>
+
+															<p class="button-submit">
+																<input type="submit" name="wp-submit" class="button button-primary button-large" value="Login"/>
+																<input type="hidden" name="redirect_to" value=""/>
+															</p>
+
+															<p class="link-bottom"><a href="#losspw" class="display-box"
+																data-display=".box-lostpass"></a>
+															</p>
+														</form>
+
+														<p class="link-bottom"><a href="#losspw" class="display-box"
+															data-display=".box-lostpass">Lost your password? </a>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- end form login -->
+
+										<!-- form lost passwords -->
+										<div class="login-popup box-lostpass">
+											<div class="login-popup box-lostpass">
+												<div class="media-content" style="background-image: url(assets/images/case-studies-01.jpg);"></div>
+
+												<div class="inner-login">
+													<h3 class="title">
+														<span>
+															<a href="#register" class="display-box" data-display=".box-register">Registration</a>
+														</span>
+
+														<span class="current-title"> Reset Password</span>
+													</h3>
+
+													<div class="form-row">
+														<form name="lostpasswordform" id="lostpasswordform" method="post">
+															<p class="description"> Please enter your username or email address. You will receive a link to create a new password via email.
+															</p>
+
+															<p class="login-username">
+																<input placeholder="Username or email" type="text" name="user_login_lostpass" id="user_login_lostpass" class="input"/>
+															</p>
+
+															<p>
+																<input type="submit" name="wp-submit-lostpass" id="wp-submit-lostpass" class="button button-primary button-large" value="Reset password"/>
+															</p>
+
+															<p class="link-bottom"> Are you a member?
+																<a href="#login" class="display-box" data-display=".box-login"> Sign in now </a>
+															</p>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- end lost passwords -->
+									</div>
+								</div>
+							</div>
+							<!-- end shortcode login -->
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header class="site-header sticky-header header-overlay layout-2">
+		<div class="header-inner element-to-stick">
+			<div class="container">
+				<div class="wrap-content-header">
+					<div class="header-logo">
+						<a href="#" class="logo">
+							<img src="assets/images/logo-02.png" alt="IMG" data-retina="assets/images/logo-02.png" data-sticky="assets/images/logo-02.png" data-mobile="assets/images/logo-02.png">
+						</a>
+					</div>
+
+					<nav class="main-navigation">
+						<ul class="menu-lists">
+							<li class="menu-item-has-children">
+								<a href="home1.html">
+									Home
+								</a>
+
+								<ul class="sub-menu">
+									<li>
+										<a href="home1.html">
+											Home 01
+										</a>
+									</li>
+
+									<li>
+										<a href="home2.html">
+											Home 02
+										</a>
+									</li>
+
+									<li>
+										<a href="home3.html">
+											Home 03
+										</a>
+									</li>
+
+									<li>
+										<a href="home4.html">
+											Home 04
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="menu-item-has-children">
+								<a href="services.html">
+									Services
+								</a>
+
+								<ul class="sub-menu">
+									<li>
+										<a href="services.html">
+											Services
+										</a>
+									</li>
+
+									<li>
+										<a href="single-service.html">
+											Single service
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="menu-item-has-children">
+								<a href="about.html">
+									About
+								</a>
+
+								<ul class="sub-menu">
+									<li>
+										<a href="about.html">
+											About
+										</a>
+									</li>
+
+									<li>
+										<a href="team.html">
+											Our team
+										</a>
+									</li>
+
+									<li>
+										<a href="pricing.html">
+											Pricing
+										</a>
+									</li>
+
+									<li>
+										<a href="faq.html">
+											FAQ
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="menu-item-has-children">
+								<a href="portfolio.html">
+									Portfolio
+								</a>
+
+								<ul class="sub-menu">
+									<li>
+										<a href="portfolio.html">
+											Portfolio
+										</a>
+									</li>
+
+									<li>
+										<a href="single-portfolio.html">
+											Single portfolio
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="menu-item-has-children">
+								<a href="blog.html">
+									Blog
+								</a>
+
+								<ul class="sub-menu">
+									<li>
+										<a href="blog.html">
+											Blog
+										</a>
+									</li>
+
+									<li>
+										<a href="single-blog.html">
+											Single blog
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li>
+								<a href="contact.html">
+									Contact
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="menu-right">
+						<aside class="widget widget_thim_layout_builder">
+							<div class="wpb_wrapper">
+								<!-- shortcode search -->
+								<div class="bp-element bp-element-search layout-1">
+									<div class="search-button"></div>
+
+									<div class="search-form">
+										<span class="close-form"></span>
+
+										<form role="search" method="get" class="form-search" >
+											<input type="text" class="search-field" name="s"/>
+											<span class="search-notice"> Hit enter to search or ESC to close</span>
+										</form>
+
+										<ul class="list-search list-unstyled">
+										</ul>
+									</div>
+								</div>
+								<!-- end shortcode search -->
+							</div>
+						</aside>
+
+						<!-- Button toggle menu-mobile -->
+						<div class="menu-mobile-effect navbar-toggle">
+							<div class="icon-wrap">
+								<i class="ion-navicon"></i>
+							</div>
+						</div>
+						<!-- end Button toggle menu-mobile -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="mobile-menu-container mobile-effect">
+		<ul class="nav navbar-nav">
+			<li class="menu-item-has-children">
+				<a href="home1.html">
+					Home
+				</a>
+
+				<ul class="sub-menu">
+					<li>
+						<a href="home1.html">
+							Home 01
+						</a>
+					</li>
+
+					<li>
+						<a href="home2.html">
+							Home 02
+						</a>
+					</li>
+
+					<li>
+						<a href="home3.html">
+							Home 03
+						</a>
+					</li>
+
+					<li>
+						<a href="home4.html">
+							Home 04
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="menu-item-has-children">
+				<a href="services.html">
+					Services
+				</a>
+
+				<ul class="sub-menu">
+					<li>
+						<a href="services.html">
+							Services
+						</a>
+					</li>
+
+					<li>
+						<a href="single-service.html">
+							Single service
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="menu-item-has-children">
+				<a href="about.html">
+					About
+				</a>
+
+				<ul class="sub-menu">
+					<li>
+						<a href="about.html">
+							About
+						</a>
+					</li>
+
+					<li>
+						<a href="team.html">
+							Our team
+						</a>
+					</li>
+
+					<li>
+						<a href="pricing.html">
+							Pricing
+						</a>
+					</li>
+
+					<li>
+						<a href="faq.html">
+							FAQ
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="menu-item-has-children">
+				<a href="portfolio.html">
+					Portfolio
+				</a>
+
+				<ul class="sub-menu">
+					<li>
+						<a href="portfolio.html">
+							Portfolio
+						</a>
+					</li>
+
+					<li>
+						<a href="single-portfolio.html">
+							Single portfolio
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="menu-item-has-children">
+				<a href="blog.html">
+					Blog
+				</a>
+
+				<ul class="sub-menu">
+					<li>
+						<a href="blog.html">
+							Blog
+						</a>
+					</li>
+
+					<li>
+						<a href="single-blog.html">
+							Single blog
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				<a href="contact.html">
+					Contact
+				</a>
+			</li>
+		</ul>
+
+		<div class="copyright-text">
+			Copyright 2018 Corporate WordPress Theme by <a href="#">ThimPress</a>
+		</div>
+	</nav>
+	<!-- end Header -->
+	
+	<!-- Main content -->
+	<div id="main-content">
+		<div class="content-area">
+			<div class="page-title">
+				<div class="main-top" style="background-image: url(assets/images/page-title-01.jpg);">
+					<span class="overlay-top-header"></span>
+
+					<div class="content container"> 
+						<h1>
+							Blog
+						</h1>
+
+						<div class="wrap-breadcrumb">
+							<ul class="breadcrumbs">
+								<li>
+									<a href="#">
+										Home
+									</a>
+									<span class="breadcrum-icon"></span>
+								</li>
+
+								<li>
+									Blog
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="site-content sidebar-right">
+				<div class="container">
+					<div class="row">
+						<main class="site-main col-lg-9">
+							<div class="wrap-main-content">
+								<!-- Block blogs-list -->
+								<div class="blogs-list thim-1-col">
+									<article class="blog-item">
+										<div class="blog-header">
+											<h3 class="title">
+												<a href="#">
+													The New AdWords Experience
+												</a>
+											</h3>
+
+											<div class="meta-info">
+												<span class="info-item">
+													<i class="ion ion-android-person"></i>
+													By <a href="#">Thomas Doe</a>
+												</span>
+
+												<span class="info-item">
+													<i class="ion ion-ios-pricetags-outline"></i>
+													<a href="#">Academics</a>, <a href="#">Design</a> 
+												</span>
+
+												<span class="info-item">
+													<i class="ion ion-android-chat"></i>
+													4 Comment
+												</span>
+											</div>
+										</div>
+
+										<div class="blog-image">
+											<div class="slide-image js-call-slick-col" data-numofshow="1" data-numofscroll="1" data-loopslide="1" data-autoscroll="0" data-speedauto="6000" data-responsive="[1, 1], [1, 1], [1, 1], [1, 1], [1, 1]">
+												<div class="wrap-arrow-slick">
+													<div class="arow-slick prev-slick">
+														<i class="ion ion-ios-arrow-left"></i>
+													</div>
+
+													<div class="arow-slick next-slick">
+														<i class="ion ion-ios-arrow-right"></i>
+													</div>
+												</div>
+
+												<div class="slide-slick">
+													<div class="item-slick">
+														<img src="assets/images/blog-01.jpg" alt="IMG">
+													</div>
+
+													<div class="item-slick">
+														<img src="assets/images/blog-01.jpg" alt="IMG">
+													</div>
+												</div>
+											</div>
+
+											<div class="date-and-button">
+												<div class="btn-media">
+													<i class="ion ion-image"></i>
+												</div>
+
+												<div class="date">
+													June 16, 2018
+												</div>
+											</div>
+										</div>
+
+										<div class="blog-text">
+											Man face fruit divided seasons herb from herb moveth whose. Dominion gathered winged morning, man won’t had fly begining. light fruitful open voidwithout itselfSo fish under The given own etiamLorem ipsum dolor sit amet, consectetur adipisicing elit.
+										</div>
+
+										<div class="blog-links">
+											<a href="#" class="link-readmore">
+												Read more
+											</a>
+										</div>
+									</article>
+
+									<article class="blog-item">
+										<div class="blog-header">
+											<h3 class="title">
+												<a href="#">
+													Sources of Content Inspiration
+												</a>
+											</h3>
+
+											<div class="meta-info">
+												<span class="info-item">
+													<i class="ion ion-android-person"></i>
+													By <a href="#">Thomas Doe</a>
+												</span>
+
+												<span class="info-item">
+													<i class="ion ion-ios-pricetags-outline"></i>
+													<a href="#">Academics</a>, <a href="#">Design</a> 
+												</span>
+
+												<span class="info-item">
+													<i class="ion ion-android-chat"></i>
+													4 Comment
+												</span>
+											</div>
+										</div>
+
+										<div class="blog-image">
+											<a href="#">
+												<img src="assets/images/blog-02.jpg" alt="IMG">
+											</a>
+
+											<div class="date-and-button">
+												<div class="btn-media">
+													<i class="ion ion-android-arrow-dropright-circle"></i>
+												</div>
+
+												<div class="date">
+													June 16, 2018
+												</div>
+											</div>
+										</div>
+
+										<div class="blog-text">
+											Man face fruit divided seasons herb from herb moveth whose. Dominion gathered winged morning, man won’t had fly begining. light fruitful open voidwithout itselfSo fish under The given own etiamLorem ipsum dolor sit amet, consectetur adipisicing elit.
+										</div>
+
+										<div class="blog-links">
+											<a href="#" class="link-readmore">
+												Read more
+											</a>
+										</div>
+									</article>
+
+									<article class="blog-item">
+										<div class="blog-header">
+											<h3 class="title">
+												<a href="#">
+													Good Music for Good SEO
+												</a>
+											</h3>
+
+											<div class="meta-info">
+												<span class="info-item">
+													<i class="ion ion-android-person"></i>
+													By <a href="#">Thomas Doe</a>
+												</span>
+
+												<span class="info-item">
+													<i class="ion ion-ios-pricetags-outline"></i>
+													<a href="#">Academics</a>, <a href="#">Design</a> 
+												</span>
+
+												<span class="info-item">
+													<i class="ion ion-android-chat"></i>
+													4 Comment
+												</span>
+											</div>
+										</div>
+
+										<div class="blog-image">
+											<a href="#">
+												<img src="assets/images/blog-03.jpg" alt="IMG">
+											</a>
+
+											<div class="date-and-button">
+												<div class="btn-media">
+													<i class="ion ion-android-microphone"></i>
+												</div>
+
+												<div class="date">
+													June 16, 2018
+												</div>
+											</div>
+										</div>
+
+										<div class="blog-text">
+											Man face fruit divided seasons herb from herb moveth whose. Dominion gathered winged morning, man won’t had fly begining. light fruitful open voidwithout itselfSo fish under The given own etiamLorem ipsum dolor sit amet, consectetur adipisicing elit.
+										</div>
+
+										<div class="blog-links">
+											<a href="#" class="link-readmore">
+												Read more
+											</a>
+										</div>
+									</article>
+
+									<article class="blog-item have-no-thumbnail">
+										<div class="blog-header">
+											<h3 class="title">
+												<a href="#">
+													Is Bing Really Rendering AngularJs?
+												</a>
+											</h3>
+
+											<div class="meta-info">
+												<span class="info-item">
+													<i class="ion ion-android-person"></i>
+													By <a href="#">Thomas Doe</a>
+												</span>
+
+												<span class="info-item">
+													<i class="ion ion-ios-pricetags-outline"></i>
+													<a href="#">Academics</a>, <a href="#">Design</a> 
+												</span>
+
+												<span class="info-item">
+													<i class="ion ion-android-chat"></i>
+													4 Comment
+												</span>
+											</div>
+										</div>
+
+										<div class="blog-image">
+											<a href="#"></a>
+
+											<div class="date-and-button">
+												<div class="date">
+													June 16, 2018
+												</div>
+											</div>
+										</div>
+
+										<div class="blog-text">
+											Man face fruit divided seasons herb from herb moveth whose. Dominion gathered winged morning, man won’t had fly begining. light fruitful open voidwithout itselfSo fish under The given own etiamLorem ipsum dolor sit amet, consectetur adipisicing elit.
+										</div>
+
+										<div class="blog-links">
+											<a href="#" class="link-readmore">
+												Read more
+											</a>
+										</div>
+									</article>
+								</div>
+								<!-- end Block blogs-list -->
+
+								<ul class="loop-pagination">
+									<li>
+										<a href="#" class="page-numbers">
+											1
+										</a>
+									</li>
+
+									<li>
+										<a href="#" class="page-numbers current">
+											2
+										</a>
+									</li>
+
+									<li>
+										<a href="#" class="page-numbers">
+											3
+										</a>
+									</li>
+
+									<li>
+										<a href="#" class="page-numbers">
+											4
+										</a>
+									</li>
+
+									<li>
+										<a href="#" class="page-numbers next">
+											Next
+											<i class="ion ion-ios-arrow-thin-right"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</main>
+
+						<div class="widget-area col-lg-3 sticky-sidebar">
+							<aside class="widget widget_search">
+								<form class="search-form"> 
+									<label>
+										<input type="text" class="search-field" name="search" placeholder="What are you looking for ?">
+									</label>
+
+									<button class="search-submit">
+										<i class="ion ion-ios-search-strong"></i>
+									</button>
+								</form>
+							</aside>
+
+							<aside class="widget widget_categories">
+								<h3 class="widget-title">
+									Categories
+								</h3>
+
+								<ul>
+									<li class="cat-item">
+										<a href="#">
+											All Courses 
+										</a>
+
+										<span class="count">
+											32
+										</span>
+									</li>
+
+									<li class="cat-item">
+										<a href="#">
+											Development
+										</a>
+
+										<span class="count">
+											32
+										</span>
+									</li>
+
+									<li class="cat-item">
+										<a href="#">
+											Educational 
+										</a>
+
+										<span class="count">
+											16
+										</span>
+									</li>
+
+									<li class="cat-item">
+										<a href="#">
+											Kindergarten
+										</a>
+
+										<span class="count">
+											08
+										</span>
+									</li>
+
+									<li class="cat-item">
+										<a href="#">
+											Life Style
+										</a>
+
+										<span class="count">
+											45
+										</span>
+									</li>
+
+									<li class="cat-item">
+										<a href="#">
+											Sport Games
+										</a>
+
+										<span class="count">
+											32
+										</span>
+									</li>
+								</ul>
+							</aside>
+
+							<aside class="widget widget_thim_layout_builder">
+								<!-- shortcode posts -->
+								<div class="bp-element bp-element-posts kindergarten-layout-widget-2">
+									<div class="wrap-element">
+										<h3 class="element-title">
+											LATEST Posts
+										</h3>
+
+										<div class="post-list">
+											<div class="post-item">
+												<div class="post-image">
+													<a href="#">
+														<img src="assets/images/post-widget-01.jpg" alt="IMG">
+													</a>
+												</div>
+
+												<div class="post-text">
+													<h4 class="title">
+														<a href="#">
+															Is Bing Really Rendering Node
+														</a>
+													</h4>
+
+													<div class="info">
+														October 15, 2018
+													</div>
+												</div>
+											</div>
+
+											<div class="post-item">
+												<div class="post-image">
+													<a href="#">
+														<img src="assets/images/post-widget-02.jpg" alt="IMG">
+													</a>
+												</div>
+
+												<div class="post-text">
+													<h4 class="title">
+														<a href="#">
+															The Simple iframe Hack
+														</a>
+													</h4>
+
+													<div class="info">
+														October 15, 2018
+													</div>
+												</div>
+											</div>
+
+											<div class="post-item">
+												<div class="post-image">
+													<a href="#">
+														<img src="assets/images/post-widget-03.jpg" alt="IMG">
+													</a>
+												</div>
+
+												<div class="post-text">
+													<h4 class="title">
+														<a href="#">
+															Play is Our Brain’s Favorite Way of Learning
+														</a>
+													</h4>
+
+													<div class="info">
+														October 15, 2018
+													</div>
+												</div>
+											</div>
+
+											<div class="post-item">
+												<div class="post-image">
+													<a href="#">
+														<img src="assets/images/post-widget-04.jpg" alt="IMG">
+													</a>
+												</div>
+
+												<div class="post-text">
+													<h4 class="title">
+														<a href="#">
+															Is Bing Really Rendering Node
+														</a>
+													</h4>
+
+													<div class="info">
+														October 15, 2018
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end shortcode posts -->
+							</aside>
+
+							<aside class="widget widget_text">
+								<div class="textwidget">
+									<div class="thim-block-info-contact-2">
+										<h5 class="title-block">
+											Free Call
+										</h5>
+
+										<div class="description-block">
+											Pulvinar est metro ligula blandit maecenas
+										</div>
+
+										<div class="content-block">
+											1-900-22-44-88
+										</div>
+
+										<a href="#" class="button-block">
+											COntact us
+										</a>
+									</div>
+								</div>
+							</aside>
+
+							<aside class="widget widget_tag_cloud">
+								<h3 class="widget-title">
+									Tags Cloud
+								</h3>
+
+								<div class="tagcloud">
+									<a href="#" class="tag-cloud-link">
+										parents
+									</a>
+
+									<a href="#" class="tag-cloud-link">
+										 school
+									</a>
+
+									<a href="#" class="tag-cloud-link">
+										teachers
+									</a>
+
+									<a href="#" class="tag-cloud-link">
+										university
+									</a>
+
+									<a href="#" class="tag-cloud-link">
+										student
+									</a>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- get-started home-3 -->
+		<div class="get-started--home-3 thim-row-background-01">
+			<div class="container">
+				<!-- shortcode heading-->
+				<div class="bp-element bp-element-heading align-center kindergarten-layout-1">
+					<h3 class="title" style="font-family: inherit; font-weight: 600; font-size: 36px; line-height: 1.2; color: #fff; margin-bottom: 51px;">
+						Get started instantly!
+					</h3>
+				</div>
+				<!-- end shortcode heading-->
+
+				<form class="yikes-easy-mc-form get-started-form-2">
+					<label>
+						<input type="text" placeholder="Enter your email address...">
+					</label>
+
+					<button>
+						Request a quote
+					</button>
+				</form>
+			</div>
+		</div>
+		<!-- end get-started home-3 -->
+	</div>
+	<!-- end Main content -->
+
+	<!-- Footer -->
+	<footer class="site-footer layout-1">
+		<div class="background-footer" style="background-image: url(assets/images/bg-png-10.png);"></div>
+
+		<div class="footer-sidebars">
+			<div class="container">
+				<div class="thim-5-col">
+					<div class="item-col">	
+						<aside class="widget widget_thim_layout_builder">
+							<div class="footer-logo">
+								<img src="assets/images/logo-footer-02.png" alt="IMG">
+							</div>
+
+							<p>
+								<a href="#">info@yourdomain.com</a>
+								<br>
+								<a href="#">(+08) 12345 6789</a>
+							</p>
+
+							<p>
+								4010 Stokes Isle Apt. 179, Venaville, New York 12390, United State
+							</p>
+
+							<!-- shortcode social -->
+							<div class="bp-element bp-element-social-links default">
+								<ul class="socials">
+									<li class="facebook">
+										<a href="#">
+											<i class="social-icon fa fa-facebook"></i>
+										</a>
+									</li>
+
+									<li class="twitter">
+										<a href="#">
+											<i class="social-icon fa fa-twitter"></i>
+										</a>
+									</li>
+
+									<li class="pinterest-p">
+										<a href="#">
+											<i class="social-icon fa fa-pinterest-p"></i>
+										</a>
+									</li>
+
+									<li class="linkedin">
+										<a href="#">
+											<i class="social-icon fa fa-linkedin"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- end shortcode social -->
+						</aside>
+					</div>
+
+					<div class="item-col">	
+						<aside class="widget widget_nav_menu">
+							<h3 class="widget-title">
+								Navigation
+							</h3>
+
+							<div class="menu-useful-links-container">
+								<ul class="menu">
+									<li class="menu-item">
+										<a href="#">Home</a>
+									</li>
+
+									<li class="menu-item">
+										<a href="#">About Us</a>
+									</li>
+
+									<li class="menu-item">
+										<a href="#">Product</a>
+									</li>
+
+									<li class="menu-item">
+										<a href="#">Customers</a>
+									</li>
+
+									<li class="menu-item">
+										<a href="#">Pricing</a>
+									</li>
+								</ul>
+							</div>
+						</aside>
+					</div>
+
+					<div class="item-col">	
+						<aside class="widget widget_nav_menu">
+							<h3 class="widget-title">
+								About us
+							</h3>
+
+							<div class="menu-useful-links-container">
+								<ul class="menu">
+									<li class="menu-item">
+										<a href="#">Company</a>
+									</li>
+
+									<li class="menu-item">
+										<a href="#">Jobs</a>
+									</li>
+
+									<li class="menu-item">
+										<a href="#">Press</a>
+									</li>
+
+									<li class="menu-item">
+										<a href="#">Blog</a>
+									</li>
+
+									<li class="menu-item">
+										<a href="#">Contact Us</a>
+									</li>
+								</ul>
+							</div>
+						</aside>
+					</div>
+
+					<div class="item-col">	
+						<aside class="widget widget_nav_menu">
+							<h3 class="widget-title">
+								Workflows
+							</h3>
+
+							<div class="menu-useful-links-container">
+								<ul class="menu">
+									<li class="menu-item">
+										<a href="#">Management</a>
+									</li>
+
+									<li class="menu-item">
+										<a href="#">Reporting</a>
+									</li>
+
+									<li class="menu-item">
+										<a href="#">Tracking</a>
+									</li>
+
+									<li class="menu-item">
+										<a href="#">All Uses</a>
+									</li>
+
+									<li class="menu-item">
+										<a href="#">F.A.Q</a>
+									</li>
+								</ul>
+							</div>
+						</aside>
+					</div>
+
+					<div class="item-col">	
+						<aside class="widget widget_nav_menu">
+							<h3 class="widget-title">
+								Resources
+							</h3>
+
+							<div class="menu-useful-links-container">
+								<ul class="menu">
+									<li class="menu-item">
+										<a href="#">Global Guide</a>
+									</li>
+
+									<li class="menu-item">
+										<a href="#">Support</a>
+									</li>
+
+									<li class="menu-item">
+										<a href="#">Intergrations</a>
+									</li>
+
+									<li class="menu-item">
+										<a href="#">Community</a>
+									</li>
+								</ul>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright-area">
+			<div class="container">
+				<div class="thim-2-col">
+					<div class="copyright-text">
+						Designed by <a href="#">ThimPress.</a> Powered by WordPress.
+					</div>
+
+					<ul class="copyright-menu">
+						<li class="menu-item">
+							<a href="#">Terms of use </a>
+						</li>
+
+						<li class="menu-item">
+							<a href="#">Privacy Environmenta</a>
+						</li>
+
+						<li class="menu-item">
+							<a href="#">Policy</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end Footer -->
+
+
+	<div id="thim-preloading">
+		<div class="custom-image">
+			<img src="assets/images/wave.gif" alt="Loading">
+		</div>
+	</div>
+</div>
+
+
+<!--===============================================================================================-->
+<script src="assets/js/libs/jquery/jquery.js"></script>
+<!--===============================================================================================-->
+<script src="assets/js/libs/bootstrap/popper.js"></script>
+<script src="assets/js/libs/bootstrap/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="assets/js/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+<!--===============================================================================================-->
+<script src="assets/js/libs/slick/slick.js"></script>
+<!--===============================================================================================-->
+<script src="assets/js/libs/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="assets/js/libs/sticky-sidebar/theia-sticky-sidebar.js"></script>
+<!--===============================================================================================-->
+<script src="assets/js/thim-custom.js"></script>
+
+
+
+<div id="back-to-top" class="btn-back-to-top">
+    <i class="ion ion-ios-arrow-thin-up"></i>
+</div>
+</body>
+</html>

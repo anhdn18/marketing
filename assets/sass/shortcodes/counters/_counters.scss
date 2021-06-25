@@ -1,0 +1,137 @@
+
+.bp-element-counters{
+  &.layout-1 {
+    .counter-boxes{
+      align-items: center;
+      .item {
+        flex-grow: unset;
+        padding: 20px 5%;
+        max-width: 25%;
+        line-height: 1.5;
+        &:before {
+          height: 40px;
+          background: #e1e1e1;
+          transform: rotateZ(22deg);
+          top: 0;
+          bottom: 0;
+          right: -5px;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        &:last-child {
+          &:before {
+            display: none;
+          }
+        }
+        .number {
+          font-weight: 600;
+          font-size: 50px;
+          line-height: inherit;
+          color: #2a2a2a;
+          text-transform: uppercase;
+        }
+        .title {
+          font-weight: 300;
+          font-size: 16px;
+          color: #828282;
+          text-transform: uppercase;
+        }
+      }
+    }
+    &.color-2 {
+      .counter-boxes {
+        .item {
+          &::before {
+            background: #7cf9c5;
+          }
+          .number {
+            color: #534bff;
+          }
+        }
+      }
+    }
+    &.color-3 {
+      .counter-boxes {
+        .item {
+          .number {
+            color: #111324;
+          }
+        }
+      }
+    }
+  }
+}
+
+// responsive
+/*---------------------------------------------*/
+.responsive {
+  @media (max-width: 1299px) {
+    .bp-element-counters {
+      &.layout-1 {
+        .counter-boxes {
+          .item {
+            padding: 20px 4%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .bp-element-counters {
+      &.layout-1 {
+        .counter-boxes {
+          .item {
+            padding: 20px 3%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .bp-element-counters {
+      &.layout-1 {
+        .counter-boxes {
+          flex-wrap: wrap;
+          .item {
+            max-width: 50%;
+            padding: 20px 5%;
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .bp-element-counters {
+      &.layout-1 {
+        .item {
+          .number {
+            font-size: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 575px) {
+    .bp-element-counters {
+      &.layout-1 {
+        .counter-boxes {
+          .item {
+            width: auto;
+            margin-bottom: 0;
+            margin-top: 0;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+

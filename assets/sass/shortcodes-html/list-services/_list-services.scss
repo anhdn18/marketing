@@ -1,0 +1,57 @@
+
+.bp-element-list-services {
+	&.marketing-layout-1 {
+		.wrap-element {
+			.item-service {
+				max-width: 310px;
+				margin-right: auto;
+				margin-left: auto;
+				.icon-image {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 186px;
+					height: 176px;
+					margin-right: auto;
+					margin-left: auto;
+					background-image: url(assets/images/bg-icon-box-02.png);
+					background-position: center center;
+					background-size: cover;
+					background-repeat: no-repeat;
+					margin-top: -8px;
+					margin-bottom: -27px;
+					img {
+						max-width: 100%;
+					}
+				}
+				.content {
+					text-align: center;
+					.title {
+						font-weight: 500;
+						font-size: 18px;
+						line-height: 1.777777;
+						color: #2a2a2a;
+						word-break: break-word;
+						padding: 0;
+						margin: 0;
+						margin-bottom: 13px;
+						a {
+							color: inherit;
+							transition: all .2s;
+							&:hover {
+								color: #194bce;
+							}
+						}
+					}
+					.description {
+						font-weight: 300;
+						font-size: 16px;
+						line-height: 1.75;
+						color: #828282;
+						word-break: break-word;
+					}
+				}
+			}
+		}
+	} 
+}

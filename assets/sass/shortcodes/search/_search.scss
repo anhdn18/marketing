@@ -1,0 +1,156 @@
+
+/*\
+ *
+ * In site-header.layout-1
+ *
+\*/
+.site-header.layout-1 .bp-element-search {
+	&.layout-1 {
+		.search-button {
+			font-size: 16px;
+			line-height: 1;
+			color: $primary3-color;
+			display: flex;
+			justify-content: flex-end;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background: $primary-color;
+			cursor: pointer;
+			box-shadow: 13px 15px 15px 0px rgba(105, 105, 105, 0.08); 
+			transition: all .2s;
+			margin-left: 15px;
+			&:hover {
+				background: darken($primary-color, 15%);
+			}
+			&:before {
+				font-size: inherit;
+				content: "\f2f5";
+				font-family: Ionicons;
+			}
+		}
+		.search-form {
+			.form-search {
+				.search-field {
+					color: #fff;
+					border-color: $primary-color;
+				}
+			}
+			.close-form {
+				&:hover{
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}
+
+.home-2 .site-header.layout-1 .bp-element-search {
+	&.layout-1 {
+		.search-button {
+			color: #fff;
+		}
+	}
+}
+
+/*\
+ *
+ * In site-header.layout-2
+ *
+\*/
+.site-header.layout-2 .bp-element-search {
+	&.layout-1 {
+		.search-button {
+			font-size: 16px;
+			line-height: 1;
+			color: #fff;
+			display: flex;
+			justify-content: flex-end;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background: $primary-color;
+			cursor: pointer;
+			box-shadow: 13px 15px 15px 0px rgba(105, 105, 105, 0.08); 
+			transition: all .2s;
+			margin-left: 5px;
+			&:hover {
+				background: darken($primary-color, 15%);
+			}
+			&:before {
+				font-size: inherit;
+				content: "\f2f5";
+				font-family: Ionicons;
+			}
+		}
+		.search-form {
+			.form-search {
+				.search-field {
+					color: #fff;
+					border-color: $primary-color;
+				}
+			}
+			.close-form {
+				&:hover{
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}
+
+
+/*\
+ *
+ * In site-header.layout-3
+ *
+\*/
+.site-header.layout-3 .bp-element-search {
+	&.layout-1 {
+		.search-button {
+			font-size: 16px;
+			line-height: 1;
+			color: $main-menu-color;
+			cursor: pointer;
+			transition: all .2s;
+			margin-left: 9px;
+			position: relative;
+			padding-left: 15px;
+			&::after {
+				content: '';
+				display: block;
+				width: 1px;
+				height: 14px;
+				background: rgba(194, 194, 194, .3);
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			&:hover {
+				text-shadow: 0px 0px 3px #fff;
+			}
+			&:before {
+				font-size: inherit;
+				content: "\f2f5";
+				font-family: Ionicons;
+			}
+		}
+		.search-form {
+			.form-search {
+				.search-field {
+					color: #fff;
+					border-color: $primary-color;
+				}
+			}
+			.close-form {
+				&:hover{
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}

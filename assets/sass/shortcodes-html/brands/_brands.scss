@@ -1,0 +1,51 @@
+
+
+.bp-element-brands {
+    &.layout-grid {
+        background: transparent;
+        padding: 0;
+        .wrap-content {
+            display: flex;
+            flex-wrap: wrap;
+            .item {
+                width: calc(100% / 3);
+                height: 150px;
+                text-align: center;
+                line-height: 150px;
+                padding: 15px;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    opacity: .4;
+                    transition: all .3s;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    &.marketing-layout-1 {
+        .wrap-element {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 27px 42px;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    opacity: .4;
+                    transition: all .3s;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

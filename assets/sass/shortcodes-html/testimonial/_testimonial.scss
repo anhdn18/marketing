@@ -1,0 +1,440 @@
+
+
+.bp-element-testimonial {
+	&.marketing-layout-1 {
+		.wrap-element {
+			.row {
+				align-items: flex-start;
+				[class*="col-"]:nth-child(2) {
+					align-self: center;
+				}
+			}
+			.slide-image {
+				width: 487px;
+				max-width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				position: relative;
+				.slide-slick {
+					border-radius: 50%;
+					border-bottom-right-radius: 30%; 
+					overflow: hidden;
+					.item-slick {
+						padding: 30px;
+					}
+				}
+				.wrap-arrow-slick {
+					pointer-events: none;
+					position: absolute;
+					z-index: 1;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					align-items: center;
+					.arow-slick {
+						pointer-events: auto;
+						cursor: pointer;
+						font-size: 80px;
+						line-height: 1;
+						color: #2f2674;
+						transition: all .2s;
+						&:hover {
+							color: #534bff;
+						}
+						&.next-slick {
+							margin-right: 0px;
+						}
+						&.prev-slick {
+							margin-left: 0px;
+						}
+						&.slick-arrow.slick-hidden {
+							display: none;
+						}
+						&[aria-disabled="true"] {
+							visibility: hidden;
+						}
+					}
+				}
+			}
+			.item-image {
+				position: relative;
+				img {
+					width: 100%;
+					border-radius: 50%;
+				}
+				.link-contact {
+					font-size: 40px;
+					line-height: 1;
+					color: #2f2674;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 79px;
+					height: 79px;
+					border-radius: 50%;
+					background: #7cf9c5;
+					position: absolute;
+					bottom: 0;
+					right: 55px;
+					box-shadow: 13px 15px 15px 0px rgba(105, 105, 105, 0.08);
+					transition: all .2s;
+					&:hover {
+						background: darken(#7cf9c5, 15%);
+					}
+				}
+			}
+			.slide-text {
+				margin-left: -30px;
+				.item-slick {
+					padding-left: 30px;
+				}
+			}
+			.item-text {
+				padding-top: 50px;
+				.content-testimonial {
+					font-weight: 300;
+					font-size: 20px;
+					line-height: 1.8;
+					color: #828282;
+					word-break: break-word;
+					margin-bottom: 40px;
+					position: relative;
+					z-index: 0;
+					&::before {
+						content: '‘‘';
+						font-family: Heebo;
+						font-weight: 400;
+						font-size: 330px;
+						color: #f8f9f9;
+						letter-spacing: -22px;
+						position: absolute;
+						z-index: -1;
+						top: -188px;
+						left: -46px;
+					}
+				}
+				.author-testimonial {
+					font-weight: 300;
+					font-size: 16px;
+					line-height: 1.7;
+					color: #828282;
+					word-break: break-word;
+					.name {
+						font-weight: 500;
+						font-size: 20px;
+						color: #2f2674;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	&.marketing-layout-2 {
+		.wrap-element {
+			.slide-image {
+				margin-right: 30px;
+				position: relative;
+				z-index: 1;
+				.slide-slick {
+					padding-left: calc(100% / 3);
+					overflow: hidden;
+					.slick-list {
+						overflow: visible;
+					}
+					.item-slick {
+						.item-image {
+							transition: all 1s ease;
+							margin: 16% -50% 0 50%;
+						}
+						&.slick-center {
+							.item-image {
+								margin: 0 0 16% 0;
+								&::before {
+									opacity: 0;
+								}
+							}
+						}
+					}
+				}
+				.wrap-arrow-slick {
+					pointer-events: none;
+					position: absolute;
+					z-index: 1;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					.arow-slick {
+						pointer-events: auto;
+						cursor: pointer;
+						&:hover {
+							color: #534bff;
+						}
+						&.next-slick {
+							display: none;
+						}
+						&.prev-slick {
+							width: calc(100% / 3);
+							height: 100%;
+							position: absolute;
+							top: 0;
+							left: 0;
+						}
+						&.slick-arrow.slick-hidden {
+							display: none;
+						}
+						&[aria-disabled="true"] {
+							visibility: hidden;
+						}
+					}
+				}
+			}
+			.item-image {
+				border-radius: 5px;
+				overflow: hidden;
+				position: relative;
+				&::before {
+					content: '';
+					display: block;
+					width: 110%;
+					height: 110%;
+					border-radius: inherit;
+					position: absolute;
+					top: 0;
+					left: 0;
+					@include bg-gradient-horizontal(#8b49f7,#00d280);
+					opacity: .45;
+					transition: all 1s;
+				}
+				img {
+					width: 100%;
+					border-radius: 5px;
+				}
+			}
+			.slide-text {
+				height: 100%;
+				margin-left: -30px;
+				position: relative;
+				z-index: 0;
+				padding-bottom: 120px;
+				display: flex;
+				align-items: center;
+				.slide-slick {
+					width: 100%;
+					.item-slick {
+						padding-left: 30px;
+					}
+				}
+				.wrap-arrow-slick {
+					pointer-events: none;
+					display: flex;
+					align-items: flex-end;
+					position: absolute;
+					z-index: 1;
+					top: 0;
+					left: 30px;
+					height: 100%;
+					padding-bottom: 77px;
+					.arow-slick {
+						pointer-events: auto;
+						cursor: pointer;
+						font-size: 30px;
+						color: #2f2674;
+						line-height: 1;
+						display: inline-flex;
+						justify-content: center;
+						align-items: center;
+						width: 55px;
+						height: 55px;
+						border-radius: 50%;
+						background: #fff;
+						margin-right: 12px;
+						position: relative;
+						z-index: 0;
+						box-shadow: 13px 15px 15px 0px rgba(105, 105, 105, 0.08);
+						transition: all .2s;
+						&:hover {
+							color: #fff;
+							background: #febc42;
+						}
+					}
+				}
+			}
+			.item-text {
+				padding-top: 30px;
+				padding-bottom: 30px;
+				.content-testimonial {
+					font-weight: 300;
+					font-size: 20px;
+					line-height: 1.8;
+					color: #fff;
+					word-break: break-word;
+					margin-bottom: 40px;
+					position: relative;
+					z-index: 0;
+					&::before {
+						content: '‘‘';
+						font-family: Heebo;
+						font-weight: 400;
+						font-size: 250px;
+						color: #d0cdef;
+						letter-spacing: -14px;
+						position: absolute;
+						z-index: -1;
+						top: -135px;
+						left: -32px;
+						opacity: .1;
+					}
+				}
+				.author-testimonial {
+					font-weight: 300;
+					font-size: 16px;
+					line-height: 1.7;
+					color: #edebff;
+					word-break: break-word;
+					.name {
+						font-weight: 500;
+						font-size: 20px;
+						color: #ffbc42;
+						display: block;
+					}
+				}
+			}
+		}
+
+		&.color-2 {
+			.wrap-element {
+				.item-image {
+					&::before {
+						@include bg-gradient-horizontal(#ffc500,#ff6e00);
+					}
+				}
+				.slide-text {
+					.wrap-arrow-slick {
+						.arow-slick {
+							&::before {
+								content: '';
+								display: block;
+								width: 100%;
+								height: 100%;
+								border-radius: inherit;
+								position: absolute;
+								z-index: -1;
+								top: 0;
+								left: 0;
+								transition: all .2s;
+								opacity: 0;
+							}
+							&.next-slick::before {
+								@include bg-gradient-horizontal(#ffc500,#ff6e00);
+							}
+							&.prev-slick::before {
+								@include bg-gradient-horizontal(#ff6e00,#ffc500);
+							}
+							&:hover {
+								&:before {
+									opacity: 1;
+								}
+							}
+						}
+					}
+				}
+				.item-text {
+					.content-testimonial {
+						color: #d0cdef;
+					}
+					.author-testimonial {
+						color: #d0cdef;
+						.name {
+							color: #ff6e00;
+						}
+					}
+				}
+			}
+		}
+		
+
+		&.color-3 {
+			.wrap-element {
+				.item-image {
+					&::before {
+						@include bg-gradient-horizontal(#8b49f7,#00d280);
+						opacity: .45;
+					}
+				}
+				.slide-text {
+					.wrap-arrow-slick {
+						.arow-slick {
+							border: 1px solid #f1f0fa;
+							&::before {
+								display: none;
+							}
+							&:hover {
+								background: #7856ff;
+								border-color: #7856ff;
+							}
+						}
+					}
+				}
+				.item-text {
+					.content-testimonial {
+						color: #828282;
+						&::before {
+							color: #828282;
+							opacity: .15;
+						}
+					}
+					.author-testimonial {
+						color: #828282;
+						.name {
+							color: #111324;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*\
+ *
+ * Responsive
+ *
+\*/
+.responsive .bp-element-testimonial {
+	@media (max-width: 767px) {
+		&.marketing-layout-1 {
+			.wrap-element {
+				.item-text {
+					text-align: center;
+				}
+			}
+		}
+		&.marketing-layout-2 {
+			.wrap-element {
+				.slide-image {
+					margin-right: 0px;
+				}
+				.slide-text {
+					.wrap-arrow-slick {
+						width: calc(100% - 30px);
+						justify-content: center;
+						.arow-slick {
+							margin-right: 6px;
+							margin-left: 6px;
+						}
+					}
+				}
+				.item-text {
+					text-align: center;
+				}
+			}
+		}
+	}
+}

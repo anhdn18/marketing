@@ -1,0 +1,114 @@
+
+
+
+.page-title {
+	.main-top {
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 0;
+		.overlay-top-header {
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			@include bg-gradient-horizontal(#124ee8, #ab7ee4);
+			opacity: .85;
+		}
+		.content {
+			padding-top: 195px;
+			padding-bottom: 90px;
+			text-align: center;
+			h1 {
+				font-weight: 600;
+				font-size: 45px;
+				line-height: 1.2;
+				color: #fff;
+				word-break: break-word;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;  
+				overflow: hidden;
+				max-height: 108px;
+				margin-top: 4px;
+				margin-bottom: 4px;
+			}
+			.wrap-breadcrumb {
+				margin-top: 4px;
+				margin-bottom: 4px;
+				ul, ol, li {
+					list-style-type: none;
+					margin: 0;
+				}
+				.breadcrumbs {
+					li {
+						display: inline-block;
+						font-weight: 300;
+						font-size: 16px;
+						line-height: 1.625;
+						color: #ffbc42;
+						word-break: break-word;
+						position: relative;
+						.breadcrum-icon {
+							display: inline-block;
+							width: 4px;
+							height: 4px;
+							border-radius: 50%;
+							background: #e6e3ff;
+							margin: 0 3px;
+							transform: translateY(-2px);
+						}
+						a {
+							color: #e6e3ff;
+							transition: all .2s;
+
+							&:hover {
+								color: #ffbc42;
+							}
+						}
+					}
+				}
+			}
+			.description {
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 1.5;
+				color: #fff;
+				word-break: break-word;
+				max-width: 500px;
+				margin-right: auto;
+				margin-left: auto;
+				margin-top: 6px;
+				margin-bottom: 6px;
+			}
+		}
+	}
+}
+
+.responsive .page-title {
+	@media (max-width: 991px) {
+		.main-top {		
+			.content {
+				padding-top: 160px;
+				padding-bottom: 80px;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		.main-top {		
+			.content {
+				padding-top: 160px;
+				padding-bottom: 80px;
+				h1 {
+					font-size: 35px;
+					max-height: 84px;
+				}
+			}
+		}
+	}
+}

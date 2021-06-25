@@ -1,0 +1,48 @@
+
+
+.thim-toolbar {
+	border-bottom: 1px solid rgba(235, 235, 235, .12);
+	.toolbar-inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.toolbar-right {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			margin-right: 0;
+			margin-left: auto;
+		}
+		.widget_thim_layout_builder {
+			display: flex;
+			align-items: center;
+			.wpb_wrapper {
+				display: flex;
+				align-items: center;
+				.bp-element {
+					margin-left: 15px;
+				}
+			}
+		}
+	}
+	&.style-overlay {
+		position: absolute;
+		z-index: 10;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+	&.size-large {
+		.container {
+			max-width: 1356px;
+		}
+	}
+}
+
+.responsive .thim-toolbar {
+	@media (max-width: 991px) {
+		.thim-block-toolbar-help-info {
+			display: none;
+		}
+	}
+}

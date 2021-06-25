@@ -1,0 +1,60 @@
+.bp-element-accordion {
+    &.kindergarten-layout-1 {
+        .wrap-element {
+            .accordion-item {
+                border: none;
+                border-radius: 5px;
+                box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.08); 
+                padding: 3px 25px;
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .question {
+                    font-family: inherit;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: #2a2a2a;
+                    min-height: unset;
+                    padding: 15px 35px 15px 30px;
+                    i {
+                        color: inherit !important;
+                    }
+                    &::after {
+                        color: #828282;
+                    }
+                    &:hover {
+                        color: $primary-color !important;
+                        &:after {
+                            color: $primary-color !important;
+                        }
+                    }
+                }
+                .answer {
+                    line-height: 1.75;
+                    color: #828282;
+                    border-top: 1px solid #ebebeb;
+                    padding: 22px 0;
+                }
+                &.active-dropdown {
+                    .question {
+                        color: $primary-color !important;
+                        &::after {
+                            content: '\f463';
+                            color: $primary-color !important;
+                        }
+                    }
+                }
+                &.hidden-icon {
+                    .question {
+                        padding-left: 0;
+                    }
+                    i {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

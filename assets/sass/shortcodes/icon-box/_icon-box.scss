@@ -1,0 +1,97 @@
+.bp-element-icon-box {        
+    &.layout-1 {
+        .icon-box {
+            .icon-image {
+                text-align: inherit;
+                margin-bottom: 19px;
+            }
+            .content {
+                .title {
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 1.4;
+                    color: #2a2a2a;
+                    word-break: break-word;
+                    padding: 0;
+                    margin-bottom: 25px;
+                }
+                .description {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 1.75;
+                    color: #828282;
+                    word-break: break-word;
+                    & > *:last-child {
+                        margin-bottom: 0;
+                    }
+                    ul {
+                        list-style-type: none;
+                        margin-left: 0;
+                        li {
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 1.75;
+                            color: #828282;
+                            word-break: break-word;
+                            padding-left: 20px;
+                            position: relative;
+                            &::before {
+                                content: '';
+                                display: block;
+                                width: 7px;
+                                height: 7px;
+                                border-radius: 50%;
+                                background: #d7d7d7;
+                                position: absolute;
+                                top: 11px;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*\
+ *
+ * Custom
+ *
+\*/
+.home-4 .bp-element-icon-box {
+	&.layout-1 {
+		.icon-box {
+			.content {
+				.title {
+					font-weight: 600;
+					font-size: 36px;
+					color: #111324;
+					margin-bottom: 20px;
+				}
+				.description {
+					p {
+						margin-bottom: 28px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.about-page .bp-element-icon-box {
+	&.layout-1 {
+		.icon-box {
+			.content {
+				.title {
+					font-weight: 600;
+					font-size: 36px;
+					line-height: 1.2;
+				}
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,36 @@
+
+.bp-element-social-links {
+	&.default {
+        &:before {
+            content: " ";
+            display: table;
+        }
+        &:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        .socials {
+            list-style: none;
+            margin: 0 -5px;
+            display: flex;
+            li {
+                list-style: none;
+                margin: 0 5px;
+                a {
+                    display: inline-block;
+                    color: #999;
+                    text-align: center;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 16px;
+                    line-height: 30px;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+

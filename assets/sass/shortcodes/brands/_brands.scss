@@ -1,0 +1,28 @@
+
+/*\
+ *
+ * Custom
+ *
+\*/
+.bp-element-brands {
+    &.layout-grid {
+        .wrap-content {
+            .item {
+                width: calc(100% / 4);
+                height: 140px;
+            }
+        }
+    }
+}
+
+.responsive .bp-element-brands {
+    @media (max-width: 767px) {
+        &.layout-grid {
+            .wrap-content {
+                .item {
+                    width: calc(100% / 2);
+                }
+            }
+        }
+    }
+}

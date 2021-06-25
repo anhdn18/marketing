@@ -1,0 +1,90 @@
+
+/*\
+ *
+ * In site-footer.layout-1
+ *
+\*/
+.site-footer.layout-1 .bp-element-social-links {
+	&.default {
+        margin-top: 30px;
+        .socials {
+            display: block;
+            margin: -13px;
+            li {
+                display: inline-block;
+                margin: 8px;
+                a {
+                    color: $footer-color-title;
+                    width: auto;
+                    height: auto;
+                    font-size: 18px;
+                    line-height: 1;
+                    padding: 5px;
+                    transition: all .2s;
+                    &:hover {
+                        color: $footer-color-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home-1 .site-footer.layout-1 .bp-element-social-links {
+    &.default {
+        .socials {
+            li {
+                a {
+                    color: $footer-color-hover;
+                    &:hover {
+                        color: $footer-color-title;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home-4 .site-footer.layout-1 .bp-element-social-links {
+    &.default {
+        .socials {
+            li {
+                a {
+                    &:hover {
+                        text-shadow: 0px 0px 3px #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*\
+ *
+ * In thim-toolbar
+ *
+\*/
+.thim-toolbar .bp-element-social-links {
+    &.default {
+        .socials {
+            margin: 0;
+            padding: 9px 0;
+            li {
+                margin: 7px;
+                a {
+                    color: $font-topbar-color;
+                    width: auto;
+                    height: auto;
+                    font-size: 14px;
+                    line-height: 1;
+                    padding: 5px;
+                    transition: all .2s;
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+
+.bp-element-features {
+	&.layout-1 {
+        .item {
+        	font-weight: 300;
+        	font-size: 16px;
+        	line-height: 1.75;
+        	color: #edebff;
+        	word-break: break-word;
+        	margin-bottom: 46px;
+        	padding-left: 52px;
+            i {
+            	font-size: 32px;
+            	line-height: 1;
+            	color: #ffbc42;
+            	top: 4px;
+            	left: 0;
+            }
+            &:last-child {
+            	margin-bottom: 0;
+            }
+        }
+    }
+}

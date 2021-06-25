@@ -1,0 +1,106 @@
+
+.bp-element-button {
+	&.align-left {
+		text-align: left;
+	}
+	&.align-center {
+		text-align: center;
+	}
+	&.align-right {
+		text-align: right;
+	}
+	.btn {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		white-space: nowrap;
+		overflow: hidden;
+		max-width: 100%;
+		border: none;
+		transition: all .2s;
+		&.focus, 
+		&:focus {
+			outline: 0;
+			box-shadow: none;
+		}
+	}
+	.btn-small {
+		width: 127px;
+		height: 40px;
+	}
+	.btn-normal {
+		height: 48px;
+	}
+	.btn-large {
+		height: 60px;
+	}
+	&.shape-square {
+		.btn {
+			border-radius: unset;
+		}
+	}
+	&.shape-round {
+		.btn-small {
+			border-radius: 20px;
+		}
+		.btn-normal {
+			border-radius: 24px;
+		}
+		.btn-large {
+			border-radius: 30px;
+		}
+	}
+	&.bg-gradient {
+		.btn {
+			position: relative;
+			z-index: 1;
+			&::before {
+				content: '';
+				display: block;
+				width: 300%;
+				height: 100%;
+				border-radius: inherit;
+				position: absolute;
+				z-index: -1;
+				top: 0px;
+				right: -1px;
+				background: #ffc500;
+				background: -webkit-linear-gradient(left, #ffc500, #ff6e00, #ffc500, #ff6e00);
+				background: -o-linear-gradient(left, #ffc500, #ff6e00, #ffc500, #ff6e00);
+				background: -moz-linear-gradient(left, #ffc500, #ff6e00, #ffc500, #ff6e00);
+				background: linear-gradient(left, #ffc500, #ff6e00, #ffc500, #ff6e00);
+				transition: right 0.3s;
+				opacity: 0;
+			}
+			&::after {
+				content: '';
+				display: block;
+				width: 300%;
+				height: 100%;
+				border-radius: inherit;
+				position: absolute;
+				z-index: -2;
+				top: 0px;
+				left: -1px;
+				background: #ffc500;
+				background: -webkit-linear-gradient(left, #ffc500, #ff6e00, #ffc500, #ff6e00);
+				background: -o-linear-gradient(left, #ffc500, #ff6e00, #ffc500, #ff6e00);
+				background: -moz-linear-gradient(left, #ffc500, #ff6e00, #ffc500, #ff6e00);
+				background: linear-gradient(left, #ffc500, #ff6e00, #ffc500, #ff6e00);
+				transition: left 0.3s;
+				opacity: 1;
+			}
+			&:hover {
+				background: transparent;
+				&:before {
+					right: -100%;
+					opacity: 1;
+				}
+				&:after {
+					left: -100%;
+					opacity: 0;
+				}
+			}
+		}
+	}
+}

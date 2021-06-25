@@ -1,0 +1,128 @@
+
+.portfolio-list {
+	padding-top: 105px;
+	padding-bottom: 120px;
+	text-align: center;
+	[class*="col-"] {
+		padding-bottom: 51px;
+	}
+	.filter-portfolio {
+		margin-bottom: 45px;
+		.item-filter {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 1.5;
+			color: #2a2a2a;
+			display: inline-block;
+			border-bottom: 1px solid transparent;
+			padding: 3px 0;
+			margin: 5px 23px;
+			transition: all .2s;
+			&:hover {
+				color: #ffbc42;
+			}
+			&.active {
+				color: #ffbc42;
+				border-color: #ffbc42;
+			}
+		}
+	}
+	.item-portfolio {
+		.image-portfolio {
+			border-radius: 5px;
+			overflow: hidden;
+			position: relative;
+			z-index: 0;
+			margin-bottom: 33px;
+			img {
+				width: 100%;
+				border-radius: inherit;
+			}
+			.overlay-image {
+				font-size: 45px;
+				line-height: 1;
+				color: #fff;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: inherit;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				@include bg-gradient-angle(-140deg, #ab7ee4, #124ee8);
+				transition: all .2s;
+				opacity: 0;
+				i {
+					transition: all .2s;
+					transform: scale(0);
+				}
+			}
+			&:hover {
+				.overlay-image {
+					opacity: .6;
+					i {
+						transform: scale(1);
+					}
+				}
+			}
+		}
+		.text-portfolio {
+			text-align: center;
+			.title-portfolio {
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 1.5;
+				color: #2a2a2a;
+				word-break: break-word;
+				padding-top: 0;
+				margin-bottom: 4px;
+				a {
+					color: inherit;
+					transition: all .2s;
+					&:hover {
+						color: #ffbc42;
+					}
+				}
+			}
+			.cat-portfolio {
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 1.75;
+				color: #828282;
+				word-break: break-word;
+				a {
+					color: inherit;
+					transition: all .2s;
+					&:hover {
+						color: #ffbc42;
+					}
+				}
+			}
+		}
+	}
+	.load-more-portfolio {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.5;
+		color: #fff;
+		text-transform: uppercase;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 100%;
+		overflow: hidden;
+		height: 48px;
+		border-radius: 24px;
+		background: #ffbc42;
+		padding: 0 50px;
+		box-shadow: 13px 15px 15px 0px rgba(105,105,105,0.08);
+		transition: all .2s;
+		&:hover {
+			background: darken(#ffbc42, 15%);
+		}
+	}
+}
+

@@ -1,0 +1,50 @@
+#back-to-top {
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	line-height: 1;
+	background: #999;
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	bottom: 60px;
+	right: 35px;
+	cursor: pointer;
+	@include transition(all 0.3s);
+	text-align: center;
+	line-height: 60px;
+	@include transform(translateY(130px));
+	z-index: 999;
+	&.scrolldown {
+		@include transform(translateY(0px));
+	}
+	i {
+		font-size: 30px;
+		line-height: 60px;
+	}
+}
+
+@media (max-width: 815px) {
+	div#back-to-top.back_to_top_container {
+		right: 15px;
+		width: 45px;
+		height: 45px;
+		line-height: 45px;
+		i {
+			line-height: 45px;
+		}
+	}
+}
+
+
+/*\
+ *
+ * Custom
+ *
+\*/
+#back-to-top {
+	background: $primary-color;
+	&:hover {
+		background: darken($primary-color, 15%);
+	}
+}

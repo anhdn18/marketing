@@ -1,0 +1,32 @@
+
+
+.bp-element-posts {
+	&.kindergarten-layout-widget-2 {
+		.wrap-element {
+			.post-list {
+				.post-item {
+					.post-text {
+						.title {
+							color: #2a2a2a;
+							a {
+								display: -webkit-box;
+								-webkit-line-clamp: 3;
+								-webkit-box-orient: vertical;  
+								overflow: hidden;
+								max-height: 60px;
+								color: inherit;
+
+								&:hover {
+									color: $primary-color;
+								}
+							}
+						}
+						.info {
+							color: #828282;
+						}
+					}
+				}
+			}
+		}
+	}
+}
